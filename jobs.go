@@ -35,16 +35,40 @@ var jobs = sdk.Jobs{
 		Description: "Creates a new Kubernetes service for the new test environment.",
 		Priority:    30,
 	},
+    sdk.Job{
+		Handler:     CreateService,
+		Title:       "Create K8S Service",
+		Description: "Creates a new Kubernetes service for the new test environment.",
+		Priority:    40,
+	},
+    sdk.Job{
+		Handler:     CreateService,
+		Title:       "Create K8S Service",
+		Description: "Creates a new Kubernetes service for the new test environment.",
+		Priority:    40,
+	},
 	sdk.Job{
 		Handler:     CreateIngress,
 		Title:       "Create K8S Ingress",
 		Description: "Creates a new Kubernetes ingress for the new test environment.",
-		Priority:    30,
+		Priority:    50,
+	},
+    sdk.Job{
+		Handler:     CreateIngress,
+		Title:       "Create K8S Ingress",
+		Description: "Creates a new Kubernetes ingress for the new test environment.",
+		Priority:    50,
+	},
+    sdk.Job{
+		Handler:     CreateIngress,
+		Title:       "Create K8S Ingress",
+		Description: "Creates a new Kubernetes ingress for the new test environment.",
+		Priority:    50,
 	},
 	sdk.Job{
 		Handler:     Cleanup,
 		Title:       "Clean up",
 		Description: "Removes all temporary files.",
-		Priority:    40,
-	},
+		Priority:    60,
+	}
 }
