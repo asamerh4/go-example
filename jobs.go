@@ -21,7 +21,7 @@ var jobs = sdk.Jobs{
 		Handler:     CreateNamespace,
 		Title:       "Create K8S Namespace",
 		Description: "Creates a new Kubernetes namespace for the new test environment.",
-		Priority:    20,
+		Priority:    30,
 	},
 	sdk.Job{
 		Handler:     CreateDeployment,
