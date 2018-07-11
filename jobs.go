@@ -70,5 +70,5 @@ var jobs = sdk.Jobs{
 		Title:       "Clean up",
 		Description: "Removes all temporary files.",
 		Priority:    60,
-	}
+	},
 }
